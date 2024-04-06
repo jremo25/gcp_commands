@@ -31,7 +31,7 @@ gcloud compute instances create revaninstance \
 
 Establishing VPC Peering
 
-Create a Peering Connection: To allow private network connectivity between two VPC networks across different projects, establish a VPC peering connection. Run the following command, adjusting the --peer-network URL to match the target VPC's full URL:
+Create a Peering Connection: To allow private network connectivity between two VPC networks across different projects, establish a VPC peering connection. Run the following command, adjusting the --peer-network URL to match the target VPC's full URL, so get your target VPC's network name, and project ID for --peer-network argument below:
 
   gcloud compute networks peerings create revan-to-malgus-peering-v2 \
     --network=revanvpc \
